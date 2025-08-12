@@ -1,0 +1,218 @@
+/* Global Reset & Base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header & Hero Section */
+.hero {
+  background: url('homebg.jpg') center/cover no-repeat;
+  color: white;
+  padding: 6rem 1rem;
+  text-align: center;
+}
+
+.artistic-title {
+  font-family: 'Great Vibes', cursive;
+  font-size: 4rem;
+  margin-bottom: 0.5rem;
+}
+
+.marathi-quote {
+  font-style: italic;
+  font-size: 1.4rem;
+  margin-bottom: 0.6rem;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: auto;
+}
+
+/* Navigation */
+nav {
+  background-color: rgba(0, 0, 0, 0); /* transparent */
+  padding: 1rem 0;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+}
+
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 0.5rem 1.2rem;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffe600;
+  background-color: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 12px 4px rgba(138, 43, 226, 0.8);
+}
+
+/* Trek Section */
+.trek-section {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.region-heading {
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color:white
+}
+
+.trek-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 2rem;
+}
+
+/* Trek Card */
+.trek-card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.trek-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 18px rgba(102, 51, 153, 0.3);
+}
+
+.trek-card img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 675 / 390;
+  object-fit: cover;
+}
+
+/* Trek Info */
+.trek-info {
+  padding: 1rem;
+}
+
+.trek-info h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  color: #222;
+}
+
+.trek-info p {
+  margin-bottom: 0.4rem;
+  font-size: 1rem;
+  color: #444;
+}
+
+/* Read More Link */
+.read-more {
+  display: inline-block;
+  margin-top: 0.8rem;
+  color: #007bff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+/* Add at bottom of styles.css */
+
+/* Fade In Animation */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Enhanced Hero Section */
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('homebg.jpg') center/cover no-repeat;
+  color: white;
+  padding: 7rem 1rem;
+  text-align: center;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.artistic-title {
+  font-family: 'Great Vibes', cursive;
+  font-size: 4.5rem;
+  margin-bottom: 0.5rem;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s ease;
+}
+.artistic-title:hover {
+  transform: scale(1.05);
+}
+
+.marathi-quote {
+  font-style: italic;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  color: #ffe600;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  animation: fadeIn 2.5s ease-in-out;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: auto;
+  color: #f2f2f2;
+  animation: fadeIn 3s ease-in-out;
+}
+.hero {
+  background: url('homebg.jpg') center/cover no-repeat;
+  color: white;
+  padding: 6rem 1rem;
+  text-align: center;
+  height: 100vh; /* Full screen */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/* Region page background */
+body.region-page {
+  background: url('regionbg.jpg') center/cover no-repeat fixed;
+  background-size: cover;
+  background-attachment: fixed;
+}
